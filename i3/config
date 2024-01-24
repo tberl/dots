@@ -302,8 +302,8 @@ mode "$mode_display" {
 
 bindsym $mod+a mode "$mode_display"
 
-exec --no-startup-id feh --nofehbg --bg-fill \
-~/.config/i3/feh/wallpaper.png
+exec --no-startup-id feh --nofehbg --bg-fill  \
+~/.config/i3/feh/wallpaper3.png
 
 # floating pop up automatically
 for_window [window_role="pop-up"] floating enable
