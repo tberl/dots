@@ -21,8 +21,6 @@ setopt PUSHD_SILENT
 
 setopt auto_cd
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 if [ $(command -v "fzf") ]; then
     source /usr/share/fzf/completion.zsh
     source /usr/share/fzf/key-bindings.zsh
@@ -32,3 +30,8 @@ if [ "$(tty)" = "/dev/tty1" ];
 then
     pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
 fi
+
+source $DOTFILES/zsh/scripts.sh
+
+# Should sourced at the very bottom. Everything loaded before will be able to use syntax highlighting.
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
