@@ -343,3 +343,5 @@ bar {
 	    binding_mode	$background $red2 $white2
 	}
 }
+
+bindsym $mod+z exec "setxkbmap -option 'caps:ctrl_modifier';xcape -e 'Caps_Lock=Escape' &"
