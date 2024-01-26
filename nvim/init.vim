@@ -25,4 +25,4 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
-
+nnoremap <c-w>h <c-w>s
